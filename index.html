@@ -42,21 +42,21 @@
                     <p class="tab-links" onclick="opentab('experience')">Experience</p>
                     <p class="tab-links" onclick="opentab('education')">Education</p>
                 </div>
-                <div class="tab-contents active-tab">
+                <div class="tab-contents active-tab" id="skills">
                     <ul>
                         <li><span>UI?UX</span><br>Designing Web/App interfaces</li>
                         <li><span>Web Development</span><br>Web app Development</li>
                         <li><span>App Development</span><br>Building apps</li>
                     </ul>
                 </div>
-                <div class="tab-contents">
+                <div class="tab-contents" id="experience">
                     <ul>
                         <li><span>UI?UX</span><br>Designing Web/App interfaces</li>
                         <li><span>Web Development</span><br>Web app Development</li>
                         <li><span>App Development</span><br>Building apps</li>
                     </ul>
                 </div>
-                <div class="tab-contents">
+                <div class="tab-contents" id="education">
                     <ul>
                         <li><span>UI?UX</span><br>Designing Web/App interfaces</li>
                         <li><span>Web Development</span><br>Web app Development</li>
@@ -67,6 +67,106 @@
         </div>
     </div>
 </div>
+<!-- ***********services************ -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <h2>Game Design</h2>
+                <p>Lore ipsum etc...</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <h2>UI/UX Design</h2>
+                <p>Lore ipsum etc...</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <h2>App Design</h2>
+                <p>Lore ipsum etc...</p>
+                <a href="#">learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- **************Portfolio**************** -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>does stuff. download from play store</p>
+                    <a href="#"></a><!-- add link icon-->
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>does stuff. download from play store</p>
+                    <a href="#"></a><!-- add link icon-->
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>does stuff. download from play store</p>
+                    <a href="#"></a><!-- add link icon-->
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ***********contact************-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>contact@example.com</p>
+                <p>012345678</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"></a> <!-- add icon-->
+                    <a href=""></a> <!-- add icon-->
+                    <a href=""></a> <!-- add icon-->
+                    <a href=""></a> <!-- add icon-->
+                </div>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder"Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementByClassName("tab-links");
+    var tabcontents = document.getElementByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
 
 </body>
 </html>
