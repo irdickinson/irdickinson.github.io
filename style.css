@@ -5,8 +5,8 @@
     box-sizing: border-box;
 }
 body{
-    background: #080808;
-    color: #fff;
+    background: #212A3E;
+    color: #F1F6F9;
 
 }
 html{
@@ -15,8 +15,8 @@ html{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url();
-    background-size: cover;
+    /*background-image: url(InisdomLogo.jpg);*/
+    background-size: auto;
     background-position: center;
     
 }
@@ -32,7 +32,8 @@ nav{
 }
 
 .logo{
-    width: 140px;
+    /*width: 140px;*/
+    width: 60px;
 }
 
 nav ul li{
@@ -41,7 +42,7 @@ nav ul li{
     margin: 10px 20px;
 }
 nav ul li a{
-    color: #fff;
+    color: #F1F6F9;
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -51,7 +52,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: #394867;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -71,13 +72,13 @@ nav ul li a:hover::after{
     margin-top: 20px;
 }
 .header-text h1 span{
-    color: #ff004f;
+    color: #394867;
 }
 /* ----------------------about-------------- */
 
 #about{
     padding: 80px 0;
-    color: #ababab;
+    color: #9BA4B5;
 }
 .row{
     display: flex;
@@ -99,7 +100,7 @@ nav ul li a:hover::after{
 .sub-title{
     font-size: 60px;
     font-weight: 600;
-    color: #fff;
+    color: #F1F6F9;
 }
 
 .tab-titles{
@@ -118,7 +119,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: #394867;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -135,7 +136,7 @@ nav ul li a:hover::after{
     margin: 10px 0;
 }
 .tab-contents ul li span{
-    color: #b54769;
+    color: #394867;
     font-size: 14px;
 }
 .tab-contents{
@@ -157,7 +158,7 @@ nav ul li a:hover::after{
     margin-top: 50px;
 }
 .services-list div{
-    background: #262626;
+    background: #394867;
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
@@ -176,13 +177,13 @@ nav ul li a:hover::after{
 }
 .services-list div a{
     text-decoration: none;
-    color: #fff;
+    color: #F1F6F9;
     font-size: 12px;
     margin-top: 20px;
     display: inline-block;
 }
 .services-list div:hover{
-    background: #ff004f;
+    background: #9BA4B5;
     transform: translateY(-10px);
 }
 /* -----------------portfolio---------------- */
@@ -209,7 +210,7 @@ nav ul li a:hover::after{
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    background: linear-gradient(#394867, #9BA4B5);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -230,11 +231,11 @@ nav ul li a:hover::after{
 }
 .layer a{
     margin-top: 20px;
-    color: #ff004f;
+    color: #394867;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
-    background: #fff;
+    background: #F1F6F9;
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -250,15 +251,15 @@ nav ul li a:hover::after{
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #ff004f;
+    border: 1px solid #394867;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
-    color: #fff;
+    color: #F1F6F9;
     transition: background 0.5s;
 }
 .btn:hover{
-    background: #ff004f;
+    background: #9BA4B5;
 }
 /* ---------------contact------------ */
 .contact-left{
@@ -271,7 +272,7 @@ nav ul li a:hover::after{
     margin-top: 30px;
 }
 .contact-left p i{
-    color: #ff004f;
+    color: #394867;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -282,17 +283,17 @@ nav ul li a:hover::after{
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
-    color: #ababab;
+    color: #F1F6F9;
     display: inline-block;
     transition: transform 0.5s;
 }
 .social-icons a:hover{
-    color: #ff004f;
+    color: #9BA4B5;
     transform: translateY(-5px);
 }
 .btn.btn2{
     display: inline-block;
-    background: #ff004f;
+    background: #394867;
 }
 .contact-right form{
     width: 100%;
@@ -301,10 +302,10 @@ form input, form textarea{
     width: 100%;
     border: 0;
     outline: none;
-    background: #262626;
+    background: #212A3E;
     padding: 15px;
     margin: 15px 0;
-    color: #fff;
+    color: #F1F6F9;
     font-size: 18px;
     border-radius: 6px;
 }
@@ -318,12 +319,12 @@ form .btn2{
     width: 100%;
     text-align: center;
     padding: 25px, 0;
-    background: #262626;
+    background: #212A3E;
     font-weight: 300;
     margin-top: 20px;
 }
 .copyright i{
-    color: #ff004f;
+    color: #9BA4B5;
 }
 /* ----------------css for small screens ----------- */
 nav .fas{
@@ -346,7 +347,7 @@ nav .fas{
         font-size: 25px;
     }
     nav ul{
-        background: #ff004f;
+        background: #9BA4B5;
         position: fixed;
         top: 0;
         right: -200px;
