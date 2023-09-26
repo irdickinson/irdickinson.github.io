@@ -25,7 +25,7 @@
         </nav>
         <div class="header-text">
             <p></p>
-            <h1>Hello, <br>I'm <span>Isaac</span> Dickinson</h1>
+            <h1><span>Hello, <br>I'm </span>Isaac Dickinson</h1>
         </div>
     </div>
 </div>
@@ -37,15 +37,16 @@
                 <img src="IsaacPortrait1.png">
             </div>
             <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p>University of Alabama graduate in May of 2023. Formal studies have encompassed data structures, 
-                    operating systems, coding algorithms, and general programming languages. Independent projects have 
-                    incorporated visual scripting, artificial intelligence, game design, and animations. </p>
+                <h1 class="sub-title">Profile</h1>
+                <p>University of Alabama graduate in May of 2023. <br>
+                    Formal studies have encompassed data structures, operating systems, coding algorithms, and general programming languages.<br> 
+                    Independent projects have incorporated data organization, artificial intelligence, and web development. </p>
 
                 <div class="tab-titles">
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('honors')">Honors</p>
+                    <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+                    <p class="tab-links" onclick="opentab('skills')">Skills</p>
                 </div>
                 <div class="tab-contents active-tab" id="education">
                     <ul>
@@ -53,36 +54,85 @@
                         <li>Bachelor of Science in Computer Science</li>
                     </ul>
                 </div>
+                <div class="tab-contents" id="honors">
+                    <ul>
+                        <li>Honors College - University Honors Program, <span>University of Alabama</span></li>
+                        <li>President's List - 4 Semesters, <span>University of Alabama</span></li>
+                        <li>Dean's List - 5 Semesters, <span>University of Alabama</span></li>
+                        <li>Presidential Scholarship, <span>University of Alabama</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="certifications">
+                    <ul>
+                        <li><span>Microsoft Certified: </span>Azure AI Fundamentals</li>
+                    </ul>
+                </div>
                 <div class="tab-contents" id="skills">
                     <ul>
-                        <li><span>Programming Languages</span><br>Designing Web/App interfaces</li>
-                        <li><span>Web Development</span><br>Web app Development</li>
-                        <li><span>App Development</span><br>Building apps</li>
+                        <li><span>Tech: </span><br>GitHub, Word, Excel, PowerPoint, MongoDB, Express, Node.js, React.js, Unreal Engine 5</li>
+                        <li><span>Programming Languages: </span><br>Python, C++, JavaScript, HTML/CSS, Java, C, C#, Haskell</li>
                     </ul>
                 </div>
-                <div class="tab-contents" id="experience">
-                    <ul>
-                        <li><span>UI?UX</span><br>Designing Web/App interfaces</li>
-                        <li><span>Web Development</span><br>Web app Development</li>
-                        <li><span>App Development</span><br>Building apps</li>
-                    </ul>
-                </div>
+                
             </div>
         </div>
     </div>
 </div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
 <!-- ***********services/projects************ -->
 <div id="services">
     <div class="container">
         <h1 class="sub-title">My Projects</h1>
         <div class="services-list">
             <div>
-                <h2>AI Image Generator</h2>
+                <h2>Website Senior Project</h2>
+                <p>-    Developed a React-based data-formatting website for a client.</p><br>
+                <p>-    Utilized Django REST framework that structured full stack development.</p><br>
+                <p>-    Performed in an agile enivornment with punctual developments and updates.</p><br>
+                <p>-    Managed group workloads and scheduling with accommodations of client requests.</p><br>
+                <p>-    Shared and collaborated code across a four-person team with version control.</p>
+            </div>
+            <div>
+                <h2>ChatGPT AI Project</h2>
+                <p>-    Utilizes Python and an elaborate repository for in-depth conversations.</p><br>
+                <p>-    Programmed elaborate behavior trees for reactionary artificial intelligence.</p><br>
+                <p>-    Animated and retargeted an array of movements and actions that encompass pawn behaviors.</p><br>
+                <p>-    Utilized widgets to provide an informative user interface and menu functionality. </p>
+                
+            </div>
+            <div>
+                <h2>Unreal Engine 5 FPS Game Project (Neolyst Tyro)</h2>
+                <iframe width="300" height="180"
+                    src="https://www.youtube.com/embed/YgYS_tJJA2g">
+                </iframe><br><br>
+                <p>-    Incorporated extensive visual scripting for a complete gameplay loop.</p><br>
+                <p>-    Programmed elaborate behavior trees for reactionary artificial intelligence.</p><br>
+                <p>-    Animated and retargeted an array of movements and actions that encompass pawn behaviors.</p><br>
+                <p>-    Utilized widgets to provide an informative user interface and menu functionality. </p>
+            </div>
+        </div>
+        <div class="services-list">
+            <div>
+                <h2>Website Senior Project</h2>
                 <p>-    Utilizes backend API for Dalle and Open AI</p><br>
                 <p>-    Provides machine learning capabilities.</p><br>
                 <p>-    Animated and retargeted an array of movements and actions that encompass pawn behaviors.</p><br>
                 <p>-    Utilized widgets to provide an informative user interface and menu functionality. </p>
-                
             </div>
             <div>
                 <h2>AI ChatBot</h2>
@@ -102,18 +152,6 @@
                 <p>-    Animated and retargeted an array of movements and actions that encompass pawn behaviors.</p><br>
                 <p>-    Utilized widgets to provide an informative user interface and menu functionality. </p>
             </div>
-            <!--
-            <div>
-                <h2>UI/UX Design</h2>
-                <p>Lore ipsum etc...</p>
-                <a href="#">learn more</a>
-            </div>
-            <div>
-                <h2>App Design</h2>
-                <p>Lore ipsum etc...</p>
-                <a href="#">learn more</a>
-            </div>
-        -->
         </div>
     </div>
 </div>
@@ -157,7 +195,7 @@
     <div class="container">
         <div class="row">
             <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
+                <h1 class="sub-title">Contact Information</h1>
                 <p>isaacrdickinson@gmail.com</p> <!-- add an icon at front -->
                 <p>+1 (469) 442-5046</p>
                 <div class="social-icons">
@@ -166,7 +204,7 @@
                     <a href=""></a> <!-- add icon-->
                     <a href=""></a> <!-- add icon-->
                 </div>
-                <a href="IsaacDickinsonResume.pdf" download class="btn btn2">Download Résumé</a> <!-- add my actual resume -->
+                <a href="IsaacDickinsonResume.pdf" download class="btn btn2">Download Resume</a> <!-- add my actual resume -->
             </div>
             <!--
             <div class="contact-right">

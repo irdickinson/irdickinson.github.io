@@ -72,7 +72,7 @@ nav ul li a:hover::after{
     margin-top: 20px;
 }
 .header-text h1 span{
-    color: #394867;
+    color: #9BA4B5;
 }
 /* ----------------------about-------------- */
 
@@ -110,7 +110,8 @@ nav ul li a:hover::after{
 }
 .tab-links{
     margin-right: 50px;
-    font-size: 18px;
+    font-size: 20px;
+    color: #F1F6F9;
     font-weight: 500;
     cursor: pointer;
     position: relative;
@@ -126,7 +127,7 @@ nav ul li a:hover::after{
     transition: 0.5s;
 }
 
-.tab-links.active-links::after{
+.tab-links.active-link::after{
     width: 50%;
 
 }
@@ -136,8 +137,8 @@ nav ul li a:hover::after{
     margin: 10px 0;
 }
 .tab-contents ul li span{
-    color: #394867;
-    font-size: 14px;
+    color: #F1F6F9;
+    font-size: 18px;
 }
 .tab-contents{
     display: none;
@@ -160,7 +161,7 @@ nav ul li a:hover::after{
 .services-list div{
     background: #394867;
     padding: 40px;
-    font-size: 13px;
+    font-size: 18px;
     font-weight: 300;
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
